@@ -1,0 +1,7 @@
+{
+  "name": "iOS_plugin",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

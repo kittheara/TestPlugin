@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="cordova-plugin-last-christmas" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>
+		lastChristmas
+	</name>
+	<js-module name="lastChristmas" src="www/lastChristmas.js">
+		<clobbers target="lastChristmas" />
+	</js-module>
+	<platform name="ios">
+		<config-file parent="/*" target="config.xml">
+			<feature name="lastChristmas">
+				<param name="ios-package" value="lastChristmas" />
+			</feature>
+		</config-file>
+		<source-file src="src/ios/lastChristmas.m" />
+	</platform>
+	<name>
+		lastChristmas
+	</name>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="lastChristmas">
+				<param name="android-package" value="cordova.plugin.last.christmas.lastChristmas" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml">
+		</config-file>
+		<source-file src="src/android/lastChristmas.java" target-dir="src/cordova/plugin/last/christmas/lastChristmas" />
+	</platform>
+</plugin>
