@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HelloWorld } from '@awesome-cordova-plugins/hello-world/ngx';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,7 @@ export class HomePage {
 
   win: any = window;
 
-  constructor() {
+  constructor(private hello: HelloWorld) {
     // // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
     // this.plug.cordova.plugins.lastChristmas.show('hhh', function(){
 
@@ -17,8 +18,11 @@ export class HomePage {
     // }, function(){
 
     // });
-    this.win.cordova.plugins.HelloWorld.show('hhh', () => {}, () => {});
-    console.log('Hello world');
+    // this.win.HelloWorld.show('Hello World', () => {}, () => {});
+    // console.log('Hello world');
+    this.hello.show('Hiiiii').then(res => {
+      console.log(res);
+    });
   }
 
 }

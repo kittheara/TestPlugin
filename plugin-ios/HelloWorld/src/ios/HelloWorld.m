@@ -1,13 +1,8 @@
 /********* HelloWorld.m Cordova Plugin Implementation *******/
 
+
 #import <Cordova/CDV.h>
-
-@interface HelloWorld : CDVPlugin {
-  // Member variables go here.
-}
-
-- (void)show:(CDVInvokedUrlCommand*)command;
-@end
+#import "HelloWorld.h"
 
 @implementation HelloWorld
 

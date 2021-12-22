@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~13.0.0",
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
+    "@awesome-cordova-plugins/core": "^5.37.3",
     "@ionic/angular": "^6.0.0",
     "plugman": "^3.0.1",
     "rxjs": "~6.6.0",
@@ -47,6 +48,7 @@
     "cordova-plugin-hello-world": "file:plugin-ios/HelloWorld",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-ionic-webview": "^4.2.1",
+    "cordova-plugin-last-christmas": "file:plugin-ios/lastChristmas",
     "cordova-plugin-splashscreen": "^5.0.2",
     "cordova-plugin-statusbar": "^2.4.2",
     "cordova-plugin-whitelist": "^1.3.3",
@@ -75,9 +77,11 @@
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-last-christmas": {},
       "cordova-plugin-hello-world": {}
     },
     "platforms": [
+      "ios",
       "android"
     ]
   }

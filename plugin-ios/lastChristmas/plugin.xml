@@ -6,14 +6,17 @@
 	<js-module name="lastChristmas" src="www/lastChristmas.js">
 		<clobbers target="lastChristmas" />
 	</js-module>
+
 	<platform name="ios">
 		<config-file parent="/*" target="config.xml">
 			<feature name="lastChristmas">
 				<param name="ios-package" value="lastChristmas" />
 			</feature>
 		</config-file>
+    <header-file src="src/ios/lastChristmas.h" />
 		<source-file src="src/ios/lastChristmas.m" />
 	</platform>
+
 	<name>
 		lastChristmas
 	</name>

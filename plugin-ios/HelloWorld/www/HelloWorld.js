@@ -1,11 +1,9 @@
 var exec = require('cordova/exec');
-var plugin_helloworld = "HelloWorld"
-
-
+var PLUGIN_NAME = "HelloWorld";
 
 var HelloWorld={
 show: function (arg, success, fail) {
-  exec (success, fail,plugin_helloworld,"show", [arg]);
+  exec (success, fail,PLUGIN_NAME,"show", [arg]);
 }
 }
 

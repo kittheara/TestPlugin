@@ -1,17 +1,18 @@
 /********* lastChristmas.m Cordova Plugin Implementation *******/
 
+#import "lastChristmas.h"
 #import <Cordova/CDV.h>
 
 @interface lastChristmas : CDVPlugin {
   // Member variables go here.
 }
 
-- (void)show:(CDVInvokedUrlCommand*)command;
+- (void)lastChristmas:(CDVInvokedUrlCommand*)command;
 @end
 
 @implementation lastChristmas
 
-- (void)show:(CDVInvokedUrlCommand*)command
+- (void)lastChristmas:(CDVInvokedUrlCommand*)command
 {
     CDVPluginResult* pluginResult = nil;
     NSString* echo = [command.arguments objectAtIndex:0];

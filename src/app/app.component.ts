@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  win: any = window;
-  constructor() {
-    this.win.cordova.plugins.HelloWorld.show('hhh', () => {}, () => {});
-    console.log('Hello world');
-  }
+  constructor() {}
 }
